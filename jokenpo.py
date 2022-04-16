@@ -1,7 +1,7 @@
 import random
 
 class play():
-      @classmethod
+      @staticmethod
       def randorizacao(a):
       
             lista = ["pedra", "papel", "tesoura"]
@@ -17,5 +17,6 @@ class play():
                   print("voce perdeu")
             else: 
                   print("voce ganhou")
-      
-play.randorizacao("pedra")
+
+a = input("escolha entre pedra, papel ou tesoura: ")
+play.randorizacao(a)
